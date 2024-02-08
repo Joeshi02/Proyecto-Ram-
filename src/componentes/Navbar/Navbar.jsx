@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div className="m-auto flex justify-between items-center border-b shadow-md flex-wrap">
       <div className="pl-4 w-32 sm:w-auto lg:w-36">
-        <img src="/imagenes/RAM.Color.png" alt="logo" />
+        <Link><img src="/imagenes/RAM.Color.png" alt="logo" /></Link>
       </div>
       <nav className={`flex w-2/3 justify-end ${open ? 'rounded' : ''}`}>        
         <div className={`hidden ${open ? 'w-full' : 'md:flex'}`}>

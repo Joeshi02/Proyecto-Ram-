@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.img-mujer1{
+    width: auto;
+    height: 548px;
+}
+.img-personas-flor{
+    width: 700px;
+    height: auto;
+}
