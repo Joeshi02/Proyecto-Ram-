@@ -30,7 +30,6 @@ const Inicio = () => {
                         <div className="flex justify-center m-1 p-1 w-full sm:w-96">
                             <img className="img-personas-flor rounded-tr-3xl rounded-bl-3xl m-4" src="/imagenes/Flor.personas.png" alt="persona-1-flor" />
                         </div>
-
                     </div>
                     <div className="w-full sm:w-1/2 flex">
                         <div className="flex-col justify-center items-center w-full sm:w-80 mx-auto my-auto">
@@ -52,7 +51,6 @@ const Inicio = () => {
                     </div>
 
                 </div>
-
                 <div className="flex-col items-center text-center">
                     <p className="text-3xl"> En 3 pasos puedes agendar una cita online</p>
                     <p>Sigue los pasos e inicia tu acompañamiento psicologico ahora </p>
@@ -88,23 +86,19 @@ const Inicio = () => {
                             </div>
                         </div>
                         <div className="m-4 p-4 w-full flex flex-col items-center sm:flex-row sm:justify-center">
-  {/* Primera Sección */}
-  <div className="mb-4 sm:mb-0 sm:mr-4">
-    <div className="flex flex-row items-center">
-      <p className="text-6xl">3</p>
-      <p className="text-3xl m-1.5">Conéctate e inicia tu cita online</p>
-    </div>
-    <div className="w-full sm:w-96">
-      <p>Tu psicólogo estará encantado de acompañarte en este nuevo camino.</p>
-    </div>
-  </div>
-
-  {/* Segunda Sección */}
-  <div>
-    <img src="/imagenes/bro2.png" alt="bros" />
-  </div>
-</div>
-
+                            <div className="mb-4 sm:mb-0 sm:mr-4">
+                                <div className="flex flex-row items-center">
+                                    <p className="text-6xl">3</p>
+                                    <p className="text-3xl m-1.5">Conéctate e inicia tu cita online</p>
+                                </div>
+                                <div className="w-full sm:w-96">
+                                    <p>Tu psicólogo estará encantado de acompañarte en este nuevo camino.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="/imagenes/bro2.png" alt="bros" />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="flex justify-center">
