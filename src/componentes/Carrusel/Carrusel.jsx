@@ -35,7 +35,7 @@ const Carrusel = () => {
 
     return (
         <>
-            <div className="max-w-[700px] h-[390px] w-2/3 m-auto py-16 px-4 relative group">
+            <div className="max-w-[700px] h-[390px] w-full sm:w-2/3 m-auto py-16 px-4 relative group">
                 <div style={{backgroundImage: `url(${links[opinion].url})`}} className="w-full h-full rounded-tr-3xl rounded-bl-3xl bg-center bg-cover duration-500"></div>
                 <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
                     <BsChevronCompactLeft onClick={prevOpinion} size={30}/>

@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nextui-org/accordion": "^2.0.28",
+    "@nextui-org/react": "^2.2.9",
     "aos": "^3.0.0-beta.6",
+    "framer-motion": "^11.0.3",
     "lucide-react": "^0.323.0",
     "react": "^18.2.0",
     "react-calendly": "^4.3.0",
