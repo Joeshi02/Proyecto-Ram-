@@ -51,7 +51,8 @@ const Inicio = () => {
                     </div>
 
                 </div>
-                <div className="flex-col items-center text-center">
+                <div className="bg-instrucciones">
+                 <div className="flex-col items-center text-center">
                     <p className="text-3xl"> En 3 pasos puedes agendar una cita online</p>
                     <p>Sigue los pasos e inicia tu acompañamiento psicologico ahora </p>
                 </div>
@@ -103,7 +104,9 @@ const Inicio = () => {
                 </div>
                 <div className="flex justify-center">
                     <button className="m-4 p-4 bg-green-600 rounded-xl w-80 flex justify-center content-center"><Link to="/profesionales"></Link> Comienza ahora</button>
+                </div>   
                 </div>
+                
                 <div className="text-center text-2xl">
                     <p>Conoce que opinan nuestros pacientes</p>
                 </div>
