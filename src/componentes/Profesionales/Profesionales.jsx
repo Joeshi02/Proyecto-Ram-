@@ -1,61 +1,27 @@
+import { useEffect, useState } from "react"
 import ProfesionalCard from "../ProfesionalCard/ProfesionalCard"
+import { collection, getDocs, getFirestore } from "firebase/firestore";
+import { data } from "autoprefixer";
 
 const Profesionales = () => {
 
-    const professionals = [
-        {
-            id: '1',
-            name: 'Miguel Otero',
-            thumbnail: 'imagenes/professional_profile.png',
-            nationality: 'ar',
-            college: 'Universidad Central',
-            specialty: 'Psicología familiar',
-            abilities: ['Reconciliación', 'Divorsios', 'Maltrato'],
-            appointmentTime: '50',
-            priceArs: '10.000',
-            priceUsd: '40',
-            calendlyLink: '/'
-        },
-        {
-            id: '2',
-            name: 'Roberto Smith',
-            thumbnail: 'imagenes/professional_profile.png',
-            nationality: 'ar',
-            college: 'Universidad de Rosario',
-            specialty: 'Psicología infantil',
-            abilities: ['TDA', 'Autismo', 'Abusos'],
-            appointmentTime: '40',
-            priceArs: '8.000',
-            priceUsd: '35',
-            calendlyLink: '/'
-        },
-        {
-            id: '3',
-            name: 'Miguel Otero',
-            thumbnail: 'imagenes/professional_profile.png',
-            nationality: 'ar',
-            college: 'Universidad Central',
-            specialty: 'Psicología familiar',
-            abilities: ['Reconciliación', 'Divorsios', 'Maltrato'],
-            appointmentTime: '50',
-            priceArs: '10.000',
-            priceUsd: '40',
-            calendlyLink: '/'
-        },
-        {
-            id: '4',
-            name: 'Roberto Smith',
-            thumbnail: 'imagenes/professional_profile.png',
-            nationality: 'ar',
-            college: 'Universidad de Rosario',
-            specialty: 'Psicología infantil',
-            abilities: ['TDA', 'Autismo', 'Abusos'],
-            appointmentTime: '40',
-            priceArs: '8.000',
-            priceUsd: '35',
-            calendlyLink: '/'
-        },
-    ]
+   const [professionals, setProfessionals] = useState([])
+
+   useEffect(() => {
+    const db = getFirestore();
+    const itemsCollection = collection(db, "profesionales");
+
+    getDocs(itemsCollection)
+      .then((snapshot) => {
+        const docs = snapshot.docs.map((doc) => ({
+          data: { ...doc.data(), id: doc.id },
+        }));
+        setProfessionals(docs)
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
+   console.log(professionals)
 
     return (
         <div> 
@@ -64,8 +30,10 @@ const Profesionales = () => {
                 <h2 className="text-base lg:text-2xl">Listos para mejorar tu bienestar desde la comodidad y seguridad de tu hogar</h2>
             </div>
             <div className="sm:grid grid-cols-2 p-7 gap-10 lg:px-20 justify-items-center">
-                {
-                    professionals.map(prof => <ProfesionalCard key={prof.id} professional={prof} />)
+                {   professionals.length > 0 ? 
+                    professionals.map(prof => <ProfesionalCard key={prof.data.id} professional={prof} />)
+                    :
+                    <p>cargando..</p>
                 }
             </div>
         </div>
