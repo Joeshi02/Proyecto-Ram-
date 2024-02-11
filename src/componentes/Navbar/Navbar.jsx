@@ -17,7 +17,7 @@ const Links = () => {
       <Link to="/" className="mr-4">
         <button className="py-2 px-4 text-lg">Contactanos</button>
       </Link>
-      <Link to="/">
+      <Link to='/professionals'>
         <button className="py-2 px-4 text-lg">Profesionales</button>
       </Link>
     </>
@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div className="m-auto flex justify-between items-center border-b shadow-md flex-wrap">
       <div className="pl-4 w-32 sm:w-auto lg:w-36">
-        <Link><img src="/imagenes/RAM.Color.png" alt="logo" /></Link>
+        <Link to='/'><img src="/imagenes/RAM.Color.png" alt="logo" /></Link>
       </div>
       <nav className={`flex w-2/3 justify-end ${open ? 'rounded' : ''}`}>        
         <div className={`hidden ${open ? 'w-full' : 'md:flex'}`}>

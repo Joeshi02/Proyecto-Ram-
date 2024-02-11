@@ -14,7 +14,7 @@ const Acordiones = () => {
     
   ]
   return (
-    <div className="w-2/3">
+    <div className="w-2/3 text-primary">
       <Accordion>
       <AccordionItem key="1" aria-label="Accordion 1" title=" ¿La consulta es confidencial? ">
         {defaultContent[0]}

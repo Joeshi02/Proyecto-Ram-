@@ -1,7 +1,7 @@
 const FormFAQ = () => {
     return (
         <div>
-            <form className="container m-auto p-2 w-2/3" >
+            <form className="container m-auto p-2 w-2/3 text-primary" >
                 <div className="mb-4">
                     <label htmlFor="nombre" className="block text-sm font-bold mb-2">
                         Ingresa tu nombre:
@@ -43,7 +43,7 @@ const FormFAQ = () => {
                     <input
                         type="submit"
                         value="Realizar consulta"
-                        className="m-4 p-4 bg-green-600 rounded-xl w-80 flex justify-center content-center"
+                        className="m-4 p-4 text-white bg-light-green hover:bg-primary rounded-3xl w-80 flex justify-center content-center duration-500 cursor-pointer"
                     />
                 </div>
             </form>
