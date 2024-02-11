@@ -14,7 +14,8 @@ export default {
         'primary': '#08585A',
         'light': '#DCF4EE',
         'skyblue': '#338AF3',
-        'light-green': '#1DBE98'
+        'light-green': '#1DBE98',
+        'ultra-light': '#EDF9F6'
       },
       fontFamily: {
         title: ['Gelasio']

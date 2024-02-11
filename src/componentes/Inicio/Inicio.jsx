@@ -22,7 +22,7 @@ const Inicio = () => {
                         <img className="img-mujer1 rounded-tl-3xl rounded-br-3xl" src="https://s3-alpha-sig.figma.com/img/508a/4488/7141e1a06e6ae64d28537a2e4fa35e4d?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M-Tgq7HYHYyOGzDqAwpSl8N5Ycm7KJuIIk6skblTmAFrjEYblHJFqUb~64CUe3m3Bpw11PAUXB2U8yQE6tMjId~V5DYmQR5pyp0y6AJDUH2Pt1-sP9owtqqiMbcHIGd-uxpIWxyJbGzRgO14oO9ceC3h2jjl~kVF2aLBKQlTwx02C-m9jSsMDlIzO2c9MNV882yYQE20eHOvJFbwe6M6Zob~eQqdE4O-kHmvVfBzElqCnINbE3lH0m1fd49PEBnFOkYgqNeQIiox5jixitA9QNxo-c2yAAwKgiTGMwBxuceO55VtZ7CehdMYyIxJ1AG6caGP9RHsSMO8yKBLlu7EHA__" alt="img-inicio1" />
                     </div>
                 </div>
-                <div className="text-center flex justify-center bg-light p-5">
+                <div className="text-center flex justify-center bg-ultra-light p-5">
                     <h3 className="w-1/2">Ofrecemos un servicio de calidad basado en la atención, el respeto, confianza, calidez y la responsabilidad que nos caracterizan.</h3>
                 </div>
                 <div className="flex items-center justify-around m-14 flex-wrap sm:flex-nowrap">
@@ -51,7 +51,7 @@ const Inicio = () => {
                     </div>
 
                 </div>
-                <div className="bg-light">
+                <div className="bg-ultra-light">
                  <div className="flex-col items-center text-center">
                     <p className="text-3xl font-title"> En 3 pasos puedes agendar una cita online</p>
                     <p>Sigue los pasos e inicia tu acompañamiento psicologico ahora </p>
