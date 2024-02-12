@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 const Links = () => {
   return (
     <>
-      <Link to="/" className="mr-4">
+      <a href="/#section1" className="mr-4">
         <button className="py-2 px-4 text-lg">Como funciona</button>
-      </Link>
-      <Link to="/" className="mr-4">
+      </a>
+      <a href="/#section2" className="mr-4">
         <button className="py-2 px-4 text-lg">Opiniones</button>
-      </Link>
-      <Link to="/" className="mr-4">
+      </a>
+      <a href="/#section3" className="mr-4">
         <button className="py-2 px-4 text-lg">Preguntas frecuentes</button>
-      </Link>
-      <Link to="/" className="mr-4">
+      </a>
+      <a href="/#section4" className="mr-4">
         <button className="py-2 px-4 text-lg">Contactanos</button>
-      </Link>
+      </a>
       <Link to='/professionals'>
         <button className="py-2 px-4 text-lg">Profesionales</button>
       </Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <div className="m-auto flex justify-between items-center border-b shadow-md flex-wrap">
-      <div className="pl-4 w-32 sm:w-auto lg:w-36">
+      <div className="pl-4 w-32 sm:w-48 md:w-48 lg:w-36">
         <Link to='/'><img src="/imagenes/RAM.Color.png" alt="logo" /></Link>
       </div>
       <nav className={`flex w-2/3 justify-end ${open ? 'rounded' : ''}`}>        
@@ -46,7 +46,7 @@ const Navbar = () => {
       </nav>
 
       {open && (
-        <div className="w-full md:w-auto flex flex-col items-center">
+        <div onClick={()=> setOpen(false)} className="w-full md:w-auto flex flex-col items-center">
           <Links />
         </div>
       )}

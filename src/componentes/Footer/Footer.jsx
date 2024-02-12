@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='h-12 bg-light text-skyblue hover:text-primary text-base md:text-xl lg:text-2xl flex justify-center items-center'>
                 <p><a className='flex items-center justify-center' href="#"><ChevronUp size={28}/> Subir</a></p>
             </div>
-            <div className="flex flex-col justify-items-center bg-primary h-auto text-white justify-around text-base py-9 px-10 font-light w-screen">
+            <div className="flex flex-col justify-items-center bg-primary h-auto text-white justify-around text-base py-9 px-10 font-light">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-7 md:mt-8 ">
                     <div className="w-full md:w-fit flex flex-col flex-wrap h-32 md:h-auto gap-4 md:justify-self-center self-end md:self-auto mb-0">
                         <p className='font-title text-xl'>Home</p>

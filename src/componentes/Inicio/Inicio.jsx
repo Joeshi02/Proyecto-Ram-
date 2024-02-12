@@ -51,15 +51,15 @@ const Inicio = () => {
                     </div>
 
                 </div>
-                <div className="bg-ultra-light">
+                <div id="section1" className="bg-ultra-light">
                  <div className="flex-col items-center text-center">
                     <p className="text-3xl font-title"> En 3 pasos puedes agendar una cita online</p>
                     <p>Sigue los pasos e inicia tu acompañamiento psicologico ahora </p>
                 </div>
-                <div className="flex justify-center items-center ">
+                <div className="flex justify-center items-center mb-4 ">
                     <div className="p-0">
-                        <div className="m-4 p-4 w-full flex flex-col items-center sm:flex-row sm:justify-center">
-                            <div className="mb-4 sm:mb-0 sm:mr-4">
+                        <div className="  flex flex-col items-center sm:flex-row sm:justify-center">
+                            <div className="mb-4 sm:mb-0 sm:mr-4 w-96">
                                 <div className="flex flex-row items-center">
                                     <p className="text-6xl">1</p>
                                     <p className="text-3xl m-1.5 font-title">Elige a tu psicólogo</p>
@@ -72,8 +72,8 @@ const Inicio = () => {
                                 <img src="/imagenes/bro.png" alt="bros" />
                             </div>
                         </div>
-                        <div className="m-4 p-4 w-full flex flex-col items-center sm:flex-row sm:justify-center">
-                            <div className="mb-4 sm:mb-0 sm:mr-4">
+                        <div className="  flex flex-col items-center sm:flex-row sm:justify-center">
+                            <div className="mb-4 sm:mb-0 sm:mr-4 w-96">
                                 <div className="flex flex-row items-center">
                                     <p className="text-6xl">2</p>
                                     <p className="text-3xl m-1.5 font-title">Agenda tu cita online</p>
@@ -86,8 +86,8 @@ const Inicio = () => {
                                 <img src="/imagenes/bro1.png" alt="bros" />
                             </div>
                         </div>
-                        <div className="m-4 p-4 w-full flex flex-col items-center sm:flex-row sm:justify-center">
-                            <div className="mb-4 sm:mb-0 sm:mr-4">
+                        <div className="  flex flex-col items-center sm:flex-row sm:justify-center">
+                            <div className="mb-4 sm:mb-0 sm:mr-4 w-96">
                                 <div className="flex flex-row items-center">
                                     <p className="text-6xl">3</p>
                                     <p className="text-3xl m-1.5 font-title">Conéctate e inicia tu cita online</p>
@@ -107,14 +107,14 @@ const Inicio = () => {
                 </div>   
                 </div>
                 
-                <div className="text-center text-2xl">
+                <div id="section2" className="text-center text-2xl">
                     <p className="font-title">Conoce que opinan nuestros pacientes</p>
                 </div>
                 <div>
                     <Carrusel />
                 </div>
-                <div>
-                    <p className="flex justify-center text-2xl font-title">Preguntas frecuentes </p>
+                <div id="section3">
+                    <p className="flex justify-center text-2xl font-title py-3">Preguntas frecuentes </p>
                 </div>
                 <div className="flex justify-center ">
                     <Acordiones />
@@ -122,7 +122,7 @@ const Inicio = () => {
                 <div className="flex justify-center">
                     <button className="m-4 p-4 text-white bg-light-green hover:bg-primary rounded-3xl w-80 flex justify-center content-center duration-500"><Link to="/professionals">Comienza ahora</Link></button>
                 </div>
-                <div className="bg-light">
+                <div id="section4" className="bg-light">
                     <div className="flex-col justify-center">
                         <p className="text-center text-2xl font-title">Preguntas frecuentes</p>
                         <p className="text-center text-xl">¿Tienes alguna duda? o ¿Deseas dejarnos tu opinión? Escríbenos, estamos aquí para lo que necesites.</p>

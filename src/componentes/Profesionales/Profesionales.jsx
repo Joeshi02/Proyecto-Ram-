@@ -25,7 +25,7 @@ const Profesionales = () => {
 
     return (
         <div> 
-            <div className="flex flex-col items-center w-screen text-primary pt-7 px-7 text-center">
+            <div className="flex flex-col items-center text-primary pt-7 px-7 text-center">
                 <h1 className="text-xl md:text-2xl lg:text-4xl font-title mb-3">Nuestros profesionales</h1>
                 <h2 className="text-base lg:text-2xl">Listos para mejorar tu bienestar desde la comodidad y seguridad de tu hogar</h2>
             </div>
