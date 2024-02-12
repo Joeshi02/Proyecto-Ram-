@@ -33,6 +33,7 @@ const FormFAQ = () => {
                 remitente: mensaje.remitente.trim(),
                 nombre: mensaje.nombre.trim(),
                 mensaje: mensaje.mensaje.trim(),
+                fecha: new Date()
             };
 
             // Validate if any required field is empty
