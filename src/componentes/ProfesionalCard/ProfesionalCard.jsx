@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const ProfesionalCard = ({ professional }) => {
 
     const {data} = professional
@@ -39,7 +41,7 @@ const ProfesionalCard = ({ professional }) => {
                     </div>
                 </div>
             </div>
-            <button className='h-12 bg-light text-skyblue rounded-xl shadow-lg hover:bg-light-green hover:text-white duration-500 text-base lg:text-xl'><a className='flex justify-center items-stretch' href={data.calendlyLink}>¡Agenda tu cita aquí!</a></button>
+            <Link className='h-12 bg-light text-skyblue rounded-xl shadow-lg hover:bg-light-green hover:text-white duration-500 text-base lg:text-xl flex justify-center items-center' to={data.calendlyLink}>¡Agenda tu cita aquí!</Link>
         </div>
     )
 }

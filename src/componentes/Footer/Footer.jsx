@@ -1,7 +1,4 @@
 import { ChevronUp } from "lucide-react";
-
-
-
 import linkedinIcon from './assets/linkedin.svg'
 import facebookIcon from './assets/facebook.svg'
 import twitterIcon from './assets/twitter.svg'
@@ -10,17 +7,17 @@ const Footer = () => {
     return (
         <footer>
             <div className='h-12 bg-light text-skyblue hover:text-primary text-base md:text-xl lg:text-2xl flex justify-center items-center'>
-                <p><a className='flex items-center justify-center' href="#"><ChevronUp size={28}/> Subir</a></p>
+                <a className='flex items-center w-full h-full justify-center' href="#top"><ChevronUp size={28}/> Subir</a>
             </div>
             <div className="flex flex-col justify-items-center bg-primary h-auto text-white justify-around text-base py-9 px-10 font-light">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-7 md:mt-8 ">
                     <div className="w-full md:w-fit flex flex-col flex-wrap h-32 md:h-auto gap-4 md:justify-self-center self-end md:self-auto mb-0">
-                        <p className='font-title text-xl'>Home</p>
-                        <p className='basis-7'>Quiénes somos</p>
-                        <p className='basis-7'>Cómo funciona</p>
-                        <p className='basis-7'>Opiniones</p>
-                        <p className='basis-7'>Preguntas frecuentes</p>
-                        <p className='basis-7'>Profesionales</p>
+                        <a href='/' className='font-title text-xl'>Home</a>
+                        <a href='/#section1' className='basis-7'>Cómo funciona</a>
+                        <a href='/#section2' className='basis-7'>Opiniones</a>
+                        <a href='/#section3' className='basis-7'>Preguntas frecuentes</a>
+                        <a href='/#section4' className='basis-7'>Contáctanos</a>
+                        <a href='/professionals' className='basis-7'>Profesionales</a>
                     </div>
                     <div className="w-full md:w-fit flex flex-col gap-4 md:justify-self-center mb-3">
                         <p className='font-title text-xl'>Legal</p>

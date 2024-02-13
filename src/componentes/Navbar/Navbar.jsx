@@ -6,7 +6,7 @@ const Links = () => {
   return (
     <>
       <a href="/#section1" className="mr-4">
-        <button className="py-2 px-4 text-lg">Como funciona</button>
+        <button className="py-2 px-4 text-lg">Cómo funciona</button>
       </a>
       <a href="/#section2" className="mr-4">
         <button className="py-2 px-4 text-lg">Opiniones</button>
@@ -15,9 +15,9 @@ const Links = () => {
         <button className="py-2 px-4 text-lg">Preguntas frecuentes</button>
       </a>
       <a href="/#section4" className="mr-4">
-        <button className="py-2 px-4 text-lg">Contactanos</button>
+        <button className="py-2 px-4 text-lg">Contáctanos</button>
       </a>
-      <Link to='/professionals'>
+      <Link to='/professionals' className="mr-4">
         <button className="py-2 px-4 text-lg">Profesionales</button>
       </Link>
     </>
@@ -32,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="m-auto flex justify-between items-center border-b shadow-md flex-wrap">
+    <div className="m-auto flex justify-between items-center border-b shadow-md flex-wrap" id="top">
       <div className="pl-4 w-32 sm:w-48 md:w-48 lg:w-36">
         <Link to='/'><img src="/imagenes/RAM.Color.png" alt="logo" /></Link>
       </div>

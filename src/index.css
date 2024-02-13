@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@600&family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@700&family=Lato:wght@300;400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,24 +6,17 @@
 
 * {
     font-family: Lato;
+    font-weight: 400;
 }
 
 .img-mujer1 {
-    width: auto;
+    max-width: 513px;
     height: 548px;
 }
 
 .img-personas-flor {
     width: 700px;
     height: auto;
-}
-
-.bg-formFAQ {
-    background-color: #DCF4EE;
-}
-
-.bg-instrucciones {
-    background-color: #EDF9F6;
 }
 
 .green-border {
@@ -44,4 +37,8 @@
     margin-right: 0.5rem;
     border-radius: 1rem;
     font-weight: 300;
+}
+
+a{
+    text-decoration: none;
 }
