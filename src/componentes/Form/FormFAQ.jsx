@@ -80,7 +80,7 @@ const FormFAQ = () => {
 
     return (
         <div>
-            <form className="container m-auto p-2 w-2/3 text-primary" onSubmit={handleSubmit} >
+            <form className="m-auto w-fit sm:w-3/5 text-primary" onSubmit={handleSubmit} >
                 <div className="mb-4">
                     <label htmlFor="nombre" className="block text-sm font-bold mb-2">
                         Ingresa tu nombre:
@@ -89,7 +89,7 @@ const FormFAQ = () => {
                         type="text"
                         id="nombre"
                         name="nombre"
-                        className="w-full px-3 py-2 border rounded-lg"
+                        className="shadow-md w-full px-3 py-2 border rounded-lg"
                         onChange={handleInputChange}
                         ref={inputNombre}
                         value={mensaje.nombre}
@@ -104,7 +104,7 @@ const FormFAQ = () => {
                         type="text"
                         id="email"
                         name="remitente"
-                        className="w-full px-3 py-2 border rounded-lg"
+                        className="shadow-md w-full px-3 py-2 border rounded-lg"
                         onChange={handleInputChange}
                         ref={inputRemitente}
                         value={mensaje.remitente}
@@ -120,7 +120,7 @@ const FormFAQ = () => {
                         type="text"
                         id="consulta"
                         name="mensaje"
-                        className="w-full p-1 py-10 border rounded-lg "
+                        className="shadow-md align-top w-full p-1 py-10 border rounded-lg "
                         onChange={handleInputChange}
                         ref={inputMensaje}
                         value={mensaje.mensaje}

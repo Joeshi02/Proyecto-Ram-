@@ -2,6 +2,7 @@ import { ChevronUp } from "lucide-react";
 import linkedinIcon from './assets/linkedin.svg'
 import facebookIcon from './assets/facebook.svg'
 import twitterIcon from './assets/twitter.svg'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -17,7 +18,7 @@ const Footer = () => {
                         <a href='/#section2' className='basis-7'>Opiniones</a>
                         <a href='/#section3' className='basis-7'>Preguntas frecuentes</a>
                         <a href='/#section4' className='basis-7'>Contáctanos</a>
-                        <a href='/professionals' className='basis-7'>Profesionales</a>
+                        <Link to='/professionals' className='basis-7'>Profesionales</Link>
                     </div>
                     <div className="w-full md:w-fit flex flex-col gap-4 md:justify-self-center mb-3">
                         <p className='font-title text-xl'>Legal</p>

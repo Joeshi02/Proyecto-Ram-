@@ -45,7 +45,7 @@ const Carrusel = () => {
             width: '100%',
             height: '90%', 
             backgroundSize: 'cover', 
-            backgroundPosition: 'center', 
+            backgroundPosition: 'center',
           }}
           className="w-full h-full rounded-tr-3xl rounded-bl-3xl bg-center bg-cover duration-500"
         ></div>

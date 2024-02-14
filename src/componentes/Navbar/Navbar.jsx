@@ -6,19 +6,19 @@ const Links = () => {
   return (
     <>
       <a href="/#section1" className="mr-4">
-        <button className="py-2 px-4 text-lg">Cómo funciona</button>
+        <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Cómo funciona</button>
       </a>
       <a href="/#section2" className="mr-4">
-        <button className="py-2 px-4 text-lg">Opiniones</button>
+        <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Opiniones</button>
       </a>
       <a href="/#section3" className="mr-4">
-        <button className="py-2 px-4 text-lg">Preguntas frecuentes</button>
+        <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Preguntas frecuentes</button>
       </a>
       <a href="/#section4" className="mr-4">
-        <button className="py-2 px-4 text-lg">Contáctanos</button>
+        <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Contáctanos</button>
       </a>
       <Link to='/professionals' className="mr-4">
-        <button className="py-2 px-4 text-lg">Profesionales</button>
+        <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Profesionales</button>
       </Link>
     </>
   );
