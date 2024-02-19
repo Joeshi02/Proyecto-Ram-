@@ -10,7 +10,7 @@ const ProfesionalCard = ({ professional }) => {
                 <div className='flex lg:flex-col mb-1'>
                     <div className='w-32 h-36 lg:w-full lg:h-72 lg:mb-2 lg:relative'>
                         <img src={data.imagen} alt={data.nommbre} className='w-full h-full object-cover object-center rounded-xl' />
-                        <img src={`imagenes/flag-${data.nacionalidad}.png`} alt="" className='hidden lg:inline lg:absolute lg:right-4 lg:bottom-4 lg:z-10' />
+                        <img src={`../src/assets/${data.nacionalidad}.png`} width={44} alt="" className='hidden lg:inline lg:absolute lg:right-4 lg:bottom-4 lg:z-10' />
                     </div>
                     <div className='ml-2 flex flex-col justify-around lg:gap-1'>
                         <p>{data.profesion} Online</p>
