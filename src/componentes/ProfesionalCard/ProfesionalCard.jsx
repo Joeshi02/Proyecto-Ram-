@@ -10,14 +10,14 @@ const ProfesionalCard = ({ professional }) => {
                 <div className='flex lg:flex-col mb-1'>
                     <div className='w-32 h-36 lg:w-full lg:h-72 lg:mb-2 lg:relative'>
                         <img src={data.imagen} alt={data.nommbre} className='w-full h-full object-cover object-center rounded-xl' />
-                        <img src={`../src/assets/${data.nacionalidad}.png`} width={44} alt="" className='hidden lg:inline lg:absolute lg:right-4 lg:bottom-4 lg:z-10' />
+                        <img src={`https://res.cloudinary.com/leoms96/image/upload/v1708375761/banderas/${data.nacionalidad}.png`} width={44} alt="" className='hidden lg:inline lg:absolute lg:right-4 lg:bottom-4 lg:z-10' />
                     </div>
                     <div className='ml-2 flex flex-col justify-around lg:gap-1'>
                         <p>{data.profesion} Online</p>
                         <h2 className='font-title text-xl lg:text-4xl'>{data.nombre}</h2>
                         <span className='lg:text-xl'>{data.descripcion}</span>
                         <div className='lg:hidden'>
-                            <img src={`../src/assets/${data.nacionalidad}.png`} width={44} alt=" bandera nacionalidad" />
+                            <img src={`https://res.cloudinary.com/leoms96/image/upload/v1708375761/banderas/${data.nacionalidad}.png`} width={44} alt=" bandera nacionalidad" />
                         </div>
                     </div>
                 </div>
