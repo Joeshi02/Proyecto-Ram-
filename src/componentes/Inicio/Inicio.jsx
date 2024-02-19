@@ -17,7 +17,7 @@ const Inicio = () => {
                         <Link to="/professionals" className="m-4 p-4 text-white bg-light-green hover:bg-primary rounded-3xl w-80 duration-500 ">Comienza ahora</Link>
                     </div>
                     <div className="w-auto hidden lg:block">
-                        <img className="img-mujer1 w-full h-full object-cover object-center rounded-tl-3xl rounded-br-3xl" src="https://s3-alpha-sig.figma.com/img/508a/4488/7141e1a06e6ae64d28537a2e4fa35e4d?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M-Tgq7HYHYyOGzDqAwpSl8N5Ycm7KJuIIk6skblTmAFrjEYblHJFqUb~64CUe3m3Bpw11PAUXB2U8yQE6tMjId~V5DYmQR5pyp0y6AJDUH2Pt1-sP9owtqqiMbcHIGd-uxpIWxyJbGzRgO14oO9ceC3h2jjl~kVF2aLBKQlTwx02C-m9jSsMDlIzO2c9MNV882yYQE20eHOvJFbwe6M6Zob~eQqdE4O-kHmvVfBzElqCnINbE3lH0m1fd49PEBnFOkYgqNeQIiox5jixitA9QNxo-c2yAAwKgiTGMwBxuceO55VtZ7CehdMYyIxJ1AG6caGP9RHsSMO8yKBLlu7EHA__" alt="img-inicio1" />
+                        <img className="img-mujer1 w-full h-full object-cover object-center rounded-tl-3xl rounded-br-3xl" src="imagenes/mujer2.png" alt="img-inicio1" />
                     </div>
                 </div>
                 <div className="text-center flex justify-center bg-ultra-light p-5 text-xl">
