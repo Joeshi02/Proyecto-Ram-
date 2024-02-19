@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const ProfesionalCard = ({ professional }) => {
 
     const {data} = professional
-
+ 
     return (
         <div className='flex flex-col border-2 rounded-xl shadow-md mb-7 sm:mb-0 max-w-xl justify-between'>
             <div className='px-4 pt-4 pb-1 text-sm lg:text-base lg:flex lg:flex-col lg:gap-1'>
@@ -17,7 +17,7 @@ const ProfesionalCard = ({ professional }) => {
                         <h2 className='font-title text-xl lg:text-4xl'>{data.nombre}</h2>
                         <span className='lg:text-xl'>{data.descripcion}</span>
                         <div className='lg:hidden'>
-                            <img src={`imagenes/flag-${data.nacionalidad}.png`} alt=" bandera nacionalidad" />
+                            <img src={`../src/assets/${data.nacionalidad}.png`} width={44} alt=" bandera nacionalidad" />
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import ProfesionalCard from "../ProfesionalCard/ProfesionalCard"
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 import { data } from "autoprefixer";
+import { CircularProgress } from "@nextui-org/react";
 
 const Profesionales = () => {
 
@@ -32,7 +33,8 @@ const Profesionales = () => {
                 {professionals.length > 0 ?
                     professionals.map(prof => <ProfesionalCard key={prof.data.id} professional={prof} />)
                     :
-                    <p>cargando..</p>
+
+                        <CircularProgress label="cargando lista de profesionales"/>
                 }
             </div>
         </div>
