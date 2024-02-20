@@ -5,19 +5,19 @@ import { Link } from "react-router-dom";
 const Links = () => {
   return (
     <>
-      <a href="/#section1" className="mr-4">
+      <a href="/#section1" className="mr-4 flex">
         <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Cómo funciona</button>
       </a>
-      <a href="/#section2" className="mr-4">
+      <a href="/#section2" className="mr-4 flex">
         <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Opiniones</button>
       </a>
-      <a href="/#section3" className="mr-4">
+      <a href="/#section3" className="mr-4 flex">
         <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Preguntas frecuentes</button>
       </a>
-      <a href="/#section4" className="mr-4">
+      <a href="/#section4" className="mr-4 flex">
         <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Contáctanos</button>
       </a>
-      <Link to='/professionals' className="mr-4">
+      <Link to='/professionals' className="mr-4 flex">
         <button className="py-2 px-4 text-lg md:font-title md:text-primary md:hover:text-light-green duration-500">Profesionales</button>
       </Link>
     </>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer>
-            <div className='h-12 bg-light text-skyblue hover:text-primary text-base md:text-xl lg:text-2xl flex justify-center items-center'>
+            <div className='h-12 bg-light text-skyblue hover:text-primary text-base md:text-xl lg:text-2xl flex justify-center items-center duration-500 '>
                 <a className='flex items-center w-full h-full justify-center' href="#top"><ChevronUp size={28}/> Subir</a>
             </div>
             <div className="flex flex-col justify-items-center bg-primary h-auto text-white justify-around text-base py-9 px-10 font-light">

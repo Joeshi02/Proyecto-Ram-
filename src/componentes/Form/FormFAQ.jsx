@@ -132,7 +132,7 @@ const FormFAQ = () => {
                 <div className="mb-4 flex justify-center">
                     <input
                         type="submit"
-                        value={isConsulting ? "Enviando..." : "Realizar consulta"}
+                        value={isConsulting ? "Enviando..." : "Enviar"}
                         onChange={handleInputChange}
                         className="m-4 p-4 text-white bg-light-green hover:bg-primary rounded-3xl w-80 flex justify-center content-center duration-500 cursor-pointer"
                     />

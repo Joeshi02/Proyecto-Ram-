@@ -9,11 +9,13 @@ const Inicio = () => {
     return (
         <>
             <div className="flex flex-col mb-5 text-primary">
-                <div className="flex items-start justify-around m-5 gap-4 lg:m-10 lg:px-10">
+                <div className="flex items-center justify-around m-5 gap-4 lg:m-10 lg:px-10">
                     <div className="max-w-lg flex justify-center flex-col items-center text-center">
-                        <img className="w-80" src="/imagenes/RAM.Color.png" alt="logo color" />
-                        <h2 className="text-3xl font-title"> Somos una red de asistencia mental y atencion médica.</h2>
-                        <h3 className="font-normal text-xl">Contamos con más de 25 años de experiencia mejorando la calidad de vida las personas</h3>
+                        <div className="overflow-hidden h-64">
+                            <img className="w-80 top-0 relative -translate-y-7" src="/imagenes/RAM.Color.png" alt="logo color" />
+                        </div>
+                        <h2 className="text-2xl lg:text-4xl font-title mb-2 lg:m-b5"> Somos una red de asistencia mental y atencion médica.</h2>
+                        <h3 className="font-normal text-lg lg:text-2xl mb-2 lg:mb-5">Contamos con más de 25 años de experiencia mejorando la calidad de vida las personas</h3>
                         <Link to="/professionals" className="m-4 p-4 text-white bg-light-green hover:bg-primary rounded-3xl w-80 duration-500 ">Comienza ahora</Link>
                     </div>
                     <div className="w-auto hidden lg:block">
@@ -43,7 +45,7 @@ const Inicio = () => {
                             </ul>
                             <p className="self-start my-3">Y mucho más.</p>
                             <button className="m-4 p-3 text-white bg-light-green hover:bg-primary rounded-3xl w-80 sm:w-80 duration-500">
-                                <Link to="/professionals" className="flex justify-center align-stretch">Comienza ahora</Link>
+                                <Link to="/professionals" className="flex justify-center align-stretch p-1">Conoce nuestros profesionales</Link>
                             </button>
                         </div>
                     </div>
@@ -101,7 +103,7 @@ const Inicio = () => {
                         </div>
                     </div>
                     <div className="flex justify-center my-3">
-                        <Link to="/professionals" className="m-4 p-4 text-white bg-light-green hover:bg-primary rounded-3xl w-80 flex justify-center content-center duration-500">Comienza Ahora</Link>
+                        <Link to="/professionals" className="m-4 p-4 text-white bg-light-green hover:bg-primary rounded-3xl w-80 flex justify-center content-center duration-500">Agenda un cita</Link>
                     </div>
                 </div>
 
@@ -118,7 +120,7 @@ const Inicio = () => {
                     <Acordiones />
                 </div>
                 <div className="flex justify-center">
-                    <Link to="/professionals" className="m-4 p-4 text-white bg-light-green hover:bg-primary rounded-3xl w-80 flex justify-center content-center duration-500">Comienza ahora</Link>
+                    <Link to="/professionals" className="m-4 p-4 text-white bg-light-green hover:bg-primary rounded-3xl w-80 flex justify-center content-center duration-500">Agenda una cita</Link>
                 </div>
                 <div id="section4" className="bg-light pt-5 px-8">
                     <div className="flex-col justify-center mb-4">
